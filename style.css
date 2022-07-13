@@ -7,15 +7,17 @@
 
 *
 {
+  /* margin: 0 auto;
+  padding: 0 auto; */
+}
 
-
+.container, .container2{
   max-width: 100%;
-  max-height: none;
-
+  margin: 0 auto;
 
 }
 
-.container{
+.container, .container2{
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +26,7 @@
   overflow: hidden;
 }
 
-.image1, .image2{
+.image1, .image2, .image3, .image4{
   position: absolute;
   top: 0;
   left: 0;
@@ -45,4 +47,34 @@
   left: 50%;
   background-attachment: fixed;
   border-left: 3px solid #111;
+}
+
+.image3 {
+  background-image: url("./assets/hubble2.jpg");
+}
+
+.image4 {
+  background-image: url("./assets/webb2.jpg");
+  left: 50%;
+  background-attachment: fixed;
+  border-left: 3px solid #111;
+}
+
+a{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 30px;
+  gap: 10px;
+
+  position: absolute;
+  width: 98px;
+  height: 38px;
+  left: 1101px;
+  top: 64px;
+
+  background: blue;
+  border-radius: 50px;
+  color: #fff;
+
 }
