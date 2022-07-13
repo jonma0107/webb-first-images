@@ -1,6 +1,6 @@
 const image2 = document.querySelector(".image2");
 
-window.addEventListener('touchmove', e => {
+window.addEventListener('mousemove', e => {
   image2.style.left = e.clientX + 'px';
 });
 
@@ -8,7 +8,7 @@ window.addEventListener('touchmove', e => {
 
 const image4 = document.querySelector(".image4");
 
-window.addEventListener('touchmove', e => {
+window.addEventListener('mousemove', e => {
   image4.style.left = e.clientX + 'px';
 });
 
