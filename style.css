@@ -58,17 +58,18 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 10px 30px;
+  padding: 5px 30px;
+  margin-left: 25px;
   gap: 10px;
 
   position: absolute;
-  width: 98px;
-  height: 38px;
-  left: 1200px;
-  top: 105px;
+  /* width: 98px; */
+  height: 30px;
+  /* left: 1200px; */
+  top: 75px;
 
   background: blue;
-  border-radius: 50px;
+  border-radius: 30px;
   color: #fff;
 
 }
