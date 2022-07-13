@@ -1,1 +1,0 @@
-# webb-first-images
