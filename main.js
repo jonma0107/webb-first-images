@@ -4,7 +4,7 @@ window.addEventListener('mousemove', e => {
   image2.style.left = e.clientX + 'px';
 });
 
-window.addEventListener('ontouchmove', e => {
+window.addEventListener('touchmove', moveTouch, e => {
   image2.style.left = e.clientX + 'px';
 });
 
@@ -16,7 +16,7 @@ window.addEventListener('mousemove', e => {
   image4.style.left = e.clientX + 'px';
 });
 
-window.addEventListener('ontouchmove', e => {
+window.addEventListener('touchmove', moveTouch, e => {
   image4.style.left = e.clientX + 'px';
 });
 
