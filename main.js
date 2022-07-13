@@ -12,3 +12,6 @@ window.addEventListener('mousemove', e => {
   image4.style.left = e.clientX + 'px';
 });
 
+
+
+
