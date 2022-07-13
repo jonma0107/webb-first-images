@@ -61,6 +61,7 @@ a {
   padding: 5px 30px;
   margin-left: 25px;
   gap: 10px;
+  flex-shrink: 1;
 
   position: absolute;
   /* width: 98px; */
