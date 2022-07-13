@@ -1,1 +1,1 @@
-#From software programming with #html #css and #javascript a homenage at technological advance #JamesWebbSpaceTelescope.
+#From software programming with html, CSS and Javascript a homenage at technological advance James Webb Space Telescope.
