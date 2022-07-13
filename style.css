@@ -58,8 +58,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 5px 20px;
-  margin-left: 25px;
+  padding: 5px 25px;
+  margin-left: 30px;
   gap: 10px;
   flex-shrink: 1;
 
