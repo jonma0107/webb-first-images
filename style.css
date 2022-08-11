@@ -44,7 +44,7 @@
 
 .image2 {
   background-image: url("./assets/webb1.1.jpg");
-  /* left: 50%; */
+  left: 50%;
   background-attachment: fixed;
   border-left: 3px solid #111;
 }
@@ -55,7 +55,7 @@
 
 .image4 {
   background-image: url("./assets/webb2.2.jpg");
-  /* left: 50%; */
+  left: 50%;
   background-attachment: fixed;
   border-left: 3px solid #111;
 }
