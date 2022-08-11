@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./style.css">
-    <title>Webb's First Images</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <div class="container">
-      <div class="image1"></div>
-      <div class="image2"></div>
-      <a  href="./index.html">Next</a>
+  <link rel="stylesheet" href="./style.css">
+  <title>Webb's First Images</title>
+</head>
 
-    </div>
+<body>
+  <div class="container">
+    <div class="image1"></div>
+    <div class="image2"></div>
+    <a href="./index.html">Next</a>
 
-    <!-- Sound --><script src="./sound.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
-    <script>
+  </div>
 
-      const container = document.querySelector('.container');
+  <!-- Sound -->
+  <script src="./sound.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+  <script>
 
-      let sound = new Howl({
-        src: ['assets/music.mp3'],
-        // autoPlay: true,
-        loop: true,
-        volume: 0.7
-      });
+    const container = document.querySelector('.container');
 
-                                 /*** Play Button ***/
+    let sound = new Howl({
+      src: ['assets/music1.mp3'],
+      // autoPlay: true,
+      loop: true,
+      volume: 1.5
+    });
 
-      function createButton1(text, action) {
-        let button1 = document.createElement("button");
-        button1.textContent = text;
-        button1.addEventListener("click", action);
-        container.appendChild(button1);
-      };
+    /*** Play Button ***/
 
-      createButton1("Music Play", () => sound.play());
+    function createButton1(text, action) {
+      let button1 = document.createElement("button");
+      button1.textContent = text;
+      button1.addEventListener("click", action);
+      container.appendChild(button1);
+    };
 
-                                /*** Pause Button ***/
+    createButton1("Music Play", () => sound.play());
 
-      function createButton2(text, action) {
-        let button2 = document.createElement("button");
-        button2.classList.add('music')
-        button2.textContent = text;
-        button2.addEventListener("click", action);
-        container.appendChild(button2);
-      };
+    /*** Pause Button ***/
 
-      createButton2("Music Pause", () => sound.pause());
+    function createButton2(text, action) {
+      let button2 = document.createElement("button");
+      button2.classList.add('music')
+      button2.textContent = text;
+      button2.addEventListener("click", action);
+      container.appendChild(button2);
+    };
+
+    createButton2("Music Pause", () => sound.pause());
 
     // var sound = new Howl({
     //   src: ['assets/music.mp3'],
@@ -63,9 +65,10 @@
     // });
 
     // sound.play();
-    </script>
+  </script>
 
-    <script src="./main.js"></script>
+  <script src="./main.js"></script>
 
 </body>
+
 </html>
