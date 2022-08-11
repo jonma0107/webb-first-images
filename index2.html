@@ -6,31 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-  <title>Webb's First Images</title>
-</head>
-<body>
-  <div class="container2">
-    <div class="image1"></div>
-    <div class="image2"></div>
-    <a  href="./index.html">Next</a>
+    <title>Webb's First Images</title>
+  </head>
 
-  </div>
+  <body>
+    <div class="container">
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <a  href="./index.html">Next</a>
 
-  <!-- Sound -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
-  <script>
-    var sound = new Howl({
-  src: ['assets/music.mp3'],
-  autoplay: true,
-  loop: true,
-  volume: 0.5,
-  onend: function () {
-    console.log('Finished!');
-    }
-  });
-  </script>
-  <script src="./main.js"></script>
+    </div>
 
+    <!-- Sound --><script src="./sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+    <script>
+
+      const container = document.querySelector('.container');
+
+      let sound = new Howl({
+        src: ['assets/music.mp3'],
+        // autoPlay: true,
+        loop: true,
+        volume: 0.7
+      });
+
+                                 /*** Play Button ***/
+
+      function createButton1(text, action) {
+        let button1 = document.createElement("button");
+        button1.textContent = text;
+        button1.addEventListener("click", action);
+        container.appendChild(button1);
+      };
+
+      createButton1("Music Play", () => sound.play());
+
+                                /*** Pause Button ***/
+
+      function createButton2(text, action) {
+        let button2 = document.createElement("button");
+        button2.classList.add('music')
+        button2.textContent = text;
+        button2.addEventListener("click", action);
+        container.appendChild(button2);
+      };
+
+      createButton2("Music Pause", () => sound.pause());
+
+    // var sound = new Howl({
+    //   src: ['assets/music.mp3'],
+    //   onplayerror: function() {
+    //     sound.once('unlock', function() {
+    //       sound.play();
+    //     });
+    //   }
+    // });
+
+    // sound.play();
+    </script>
+
+    <script src="./main.js"></script>
 
 </body>
 </html>
