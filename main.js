@@ -5,6 +5,12 @@ window.addEventListener('mousemove', e => {
 });
 
 
+const image4 = document.querySelector(".image4");
+
+window.addEventListener('mousemove', e => {
+  image4.style.left = e.clientX + 'px';
+});
+
 
 
 

@@ -21,7 +21,7 @@
 }
 
 
-.image1, .image2 {
+.image1, .image2, .image3, .image4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,6 +41,18 @@
 
 .image2 {
   background-image: url("./assets/imagen2.webp");
+  left: 50%;
+  background-attachment: fixed;
+  border-left: 3px solid #111;
+}
+
+.image3 {
+  background-image: url("./assets/imagen4.jpg");
+
+}
+
+.image4 {
+  background-image: url("./assets/imagen3.jpg");
   left: 50%;
   background-attachment: fixed;
   border-left: 3px solid #111;
