@@ -47,12 +47,12 @@
 }
 
 .image3 {
-  background-image: url("./assets/imagen4.jpg");
+  background-image: url("./assets/imagen3.webp");
 
 }
 
 .image4 {
-  background-image: url("./assets/imagen3.jpg");
+  background-image: url("./assets/imagen4.webp");
   left: 50%;
   background-attachment: fixed;
   border-left: 3px solid #111;
