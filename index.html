@@ -12,12 +12,14 @@
   <body>
 
     <div class="container">
-      <div class="image3"></div>
-      <div class="image4"></div>
-      <a  href="./index2.html">Next</a>
+      <div class="image1"></div>
+      <div class="image2"></div>
+
+      <a  href="#">Next</a>
+
     </div>
 
-    <!-- Sound -->
+    <!-- *********************************** Sound ***************************************** -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
     <script>
@@ -37,13 +39,13 @@
     const container = document.querySelector('.container');
 
     let sound = new Howl({
-      src: ['assets/music1.mp3'],
+      src: ['assets/music.mp3'],
       // autoPlay: true,
       loop: true,
-      volume: 2.5
+      volume: 1.8
     });
 
-                                /*** Play Button ***/
+      /*** Play Button ***/
 
       function createButton1(text, action) {
         let button1 = document.createElement("button");
@@ -54,7 +56,7 @@
 
       createButton1("Music Play", () => sound.play());
 
-                                /*** Pause Button ***/
+      /*** Pause Button ***/
 
       function createButton2(text, action) {
         let button2 = document.createElement("button");
@@ -68,7 +70,7 @@
 
   </script>
 
-  <script src="./main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
